@@ -70,7 +70,7 @@ function newGame() {
         gameState = 'started';
         setGameElements();
 
-        playerNemeElem.innerHTML = player.name;
+        playerNameElem.innerHTML = player.name;
         setGamePoints();
     }
 }
