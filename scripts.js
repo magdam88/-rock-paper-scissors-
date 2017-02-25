@@ -31,8 +31,7 @@ var gameState = 'notStarted', //started // ended
         score: 0
     };
 
-var newGameBtn = document.getElementById('js-newGameButton'),
-    newGameElem = document.getElementById('js-newGameElement'),
+var newGameElem = document.getElementById('js-newGameElement'),
     pickElem = document.getElementById('js-playerPickElement'),
     resultsElem = document.getElementById('js-resultsTableElement');
 
@@ -80,7 +79,6 @@ function newGame() {
 
 
 function getComputerPick() {
-    var x = Math.random();
     var possiblePicks = ['rock', 'paper', 'scissors'];
     return possiblePicks[Math.floor(Math.random() * 3)];
 }
